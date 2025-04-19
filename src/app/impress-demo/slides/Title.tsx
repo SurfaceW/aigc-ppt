@@ -2,11 +2,18 @@ import React from 'react';
 
 export const TitleSlide: React.FC = () => {
   return (
-    <div className="step slide backdrop-blur-md bg-white/50 rounded-xl border border-white/20 p-10 w-[1200px] text-center shadow-[0_8px_32px_rgba(0,0,0,0.1)]" 
-      style={{backdropFilter: 'blur(10px)'}}
-      data-x="0" data-y="0" data-scale="1">
-      <h1 className="text-6xl text-blue-500 mb-5 font-light">SAS 三角形全等的历史</h1>
-      <p className="text-3xl text-gray-600 font-light">从古代文明到现代几何学</p>
+    <div className="step slide backdrop-blur-xl bg-white/40 rounded-xl border border-white/30 p-10 w-[1200px] shadow-[0_8px_32px_rgba(0,0,0,0.15)]" 
+      style={{
+        backdropFilter: 'blur(15px)',
+        transform: 'perspective(1000px) rotateX(10deg)'
+      }}
+      data-x="0" data-y="0" data-z="100" data-rotate-x="10" data-scale="1">
+      <h1 className="text-6xl bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600 mb-4 font-light border-b-2 border-blue-400 pb-2 inline-block w-full text-center">SAS 三角形全等的历史</h1>
+      <div className="flex mt-4">
+        <div className="w-full text-center">
+          <p className="text-3xl text-gray-700 font-light mt-5">从古代文明到现代几何学</p>
+        </div>
+      </div>
     </div>
   );
 }; 
