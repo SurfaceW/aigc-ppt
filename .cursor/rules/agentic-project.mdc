@@ -20,3 +20,40 @@ The slides generation style is based on
 玻璃拟态
 iOS 毛玻璃风
 关键词：glass effect, transparency, blur, frosted glass, translucent elements
+
+## PPT 的内容
+
+# SAS 全等原理
+
+## 任务
+
+协助使用 impress.js 制作一个关于 SAS 证明全等三角形历史的演示文稿。
+
+* 主要给初中生使用，不能太晦涩
+
+结构：
+
+* 开始标题
+* 历史演绎，强调：人物、贡献、年代
+* 要求炫酷 + 图文并茂，多使用 impress.js 的特性
+* 最后是一个彩蛋，展示 SAS 在现代的实际应用
+
+## 关键的任务和对 SAS 的理解
+
+关键人物 对SAS理解的贡献 大致年代
+泰勒斯 可能在测量中早期实际应用了SAS原理。 公元前6世纪
+欧几里得 在《几何原本》第一卷命题4中，形式化了一个等同于SAS的陈述。 公元前300年左右
+大卫·希尔伯特 在其欧几里得几何学的严格公理体系中，将SAS作为一条公设。 公元1899年
+古埃及人 通过使用特定的三角形（如3-4-5），隐含地理解了SAS。 公元前2700年起
+古巴比伦人 通过对毕达哥拉斯三元组的了解和几何问题的解决，隐含地理解了SAS。 公元前1900年起
+
+同时 PPT 中应该介绍他们是如何证明的。
+
+## 可以使用的资源
+
+泰勒斯照片：<https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Illustrerad_Verldshistoria_band_I_Ill_107.jpg/640px-Illustrerad_Verldshistoria_band_I_Ill_107.jpg>
+欧几里得照片：<https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSt-_lqZKhRYJxxCzuKIhyW0Rs4fEUaEWFMTg&s>
+几何原本照片：<https://pica.zhimg.com/v2-31de2e340e4eff1ce2bdf1a5db44a80c_1440w.jpg>
+大卫希尔伯特：<https://upload.wikimedia.org/wikipedia/commons/6/6e/David_Hilbert%2C_1907.jpg>
+古埃及人（金字塔）：<https://img.jzda001.com/image/2231616464593525.jpg>
+古巴比伦：
