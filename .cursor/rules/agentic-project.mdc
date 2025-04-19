@@ -14,8 +14,9 @@ This is a porject for tools of e-studio.
 
 The slides generation style is based on 
 
-使用像素风：像素风格UI：使用CSS image-rendering: pixelated 实现像素级完美显示
-复古配色：使用16色调色板，如#FF0000红色、#00FF00绿色等经典游戏色
-字体处理：推荐Press Start 2P、VT323等像素字体，保持整体风格
-动画效果：使用steps()实现像素级帧动画，避免使用模糊过渡
-实现参考：可以借鉴《星露谷物语》《蔚蓝》等复古游戏的Web版UI实现 来实现风格上的优化
+风格：玻璃态设计 (Glassmorphism)
+半透明效果
+模糊背景
+玻璃拟态
+iOS 毛玻璃风
+关键词：glass effect, transparency, blur, frosted glass, translucent elements

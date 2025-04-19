@@ -1,19 +1,19 @@
 'use client';
 
-import { useEffect, useRef } from 'react';
+import "@radix-ui/themes/styles.css";
 import Script from 'next/script';
+import { useEffect, useRef } from 'react';
 import {
-  TitleSlide,
-  IntroductionSlide,
-  EgyptSlide,
   BabylonSlide,
-  ThalesSlide,
+  EgyptSlide,
   EuclidSlide,
   HilbertSlide,
+  IntroductionSlide,
   ModernApplicationsSlide,
-  OverviewSlide
+  OverviewSlide,
+  ThalesSlide,
+  TitleSlide
 } from './slides';
-import { ImpressStyles } from './styles';
 
 interface ImpressAPI {
   init: () => void;
@@ -51,14 +51,14 @@ export default function ImpressDemo() {
   };
 
   return (
-    <div className="impress-demo">
+    <div className="w-full h-screen overflow-hidden bg-grid-pattern">
       <Script 
         src="https://unpkg.com/impress.js@1.1.0/js/impress.js"
         onLoad={handleScriptLoad}
         strategy="afterInteractive"
       />
       
-      <div id="impress">
+      <div id="impress" className="w-full h-full">
         {/* All slides are now imported as components */}
         <TitleSlide />
         <IntroductionSlide />
@@ -71,7 +71,29 @@ export default function ImpressDemo() {
         <OverviewSlide />
       </div>
 
-      <ImpressStyles />
+      {/* Global styles for impress steps */}
+      <style jsx global>{`
+        body {
+          font-family: 'Helvetica Neue', Arial, sans-serif;
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+        }
+        
+        .step:not(.active) {
+          opacity: 0.3;
+          transition: opacity 0.5s;
+        }
+
+        .bg-grid-pattern {
+          background-color: rgba(255, 255, 255, 0.9);
+          background-image: 
+            linear-gradient(rgba(0, 0, 0, 0.05) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(0, 0, 0, 0.05) 1px, transparent 1px);
+          background-size: 20px 20px;
+          backdrop-filter: blur(5px);
+        }
+      `}</style>
     </div>
   );
 } 
